@@ -21,7 +21,7 @@ rel="stylesheet">
                   
                 </div>
               </div>
-            <button class="btn btn-primary" id="edit-project-btn" onclick="editProject('{{project.id}}')">Editar projecto <i class="bi bi-pencil"></i></button>
+            <button class="btn btn-primary" id="edit-project-btn" onclick="editProject('{{project.id}}')">Editar proyecto <i class="bi bi-pencil"></i></button>
             <p id="project-description"><strong>Descripción: </strong>{{project.description}}</p>
             <p id="project-priority">
                 {% if project.priority == 'Low' %}
@@ -32,7 +32,7 @@ rel="stylesheet">
                     🔴Prioridad Alta
                 {% endif %}
             </p>
-            <h2>Tareas del projecto</h2>
+            <h2>Tareas del proyecto</h2>
             <div id="task_container">
                 {%for task in tasks %}
                 <div class="task" id="task_{{task.id}}">
