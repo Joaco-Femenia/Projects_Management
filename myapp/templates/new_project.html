@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}Crear Proyecto{% endblock %}
+    {% load static %}
+    {% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/new_project.css' %}"> 
+    {% endblock %}
+</head>
+{% block content %}
+<button id="back-btn" class="btn" onclick="window.location.href='{% url 'projects' %}';"><i class="bi bi-arrow-left"></i></button>
+    <div class="main_container">
+        <h1>Crear Proyecto</h1> 
+        <!-- Mostrar mensajes de éxito o error -->
+        {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+                <p class="{{ message.tags }}">{{ message }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- Formulario -->
+        <form method="post" class="form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Crear Proyecto</button>
+        </form>    
+    </div>
+{% block extra_js %}
+
+<script>
+    window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+            // Si la página se cargó desde la caché, limpiamos los campos del formulario y el mensaje de exito
+            document.querySelector('form').reset();
+            document.querySelector('.messages').innerHTML = '';
+        }
+    });  
+    setTimeout(() => {
+        const messages = document.querySelectorAll('.messages');
+        messages.forEach(msg => msg.style.display = 'none');
+    }, 2000); // 3 segundos
+</script>
+{% endblock %}
+{% endblock %}
