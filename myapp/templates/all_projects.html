@@ -16,6 +16,9 @@
     </a>
     <section class="projects_container">
         <ul id="projects_list" >
+            {% if projects|length == 0 %}
+            <h3>¡Todavía no hay nada aquí!</h3>
+            {% endif %}
             {% for project in projects %}
             <li class="project" data-projectid="{{ project.id }}">
                 <a href="{% url 'project_details' project.id %}">

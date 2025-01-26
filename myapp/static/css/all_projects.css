@@ -8,11 +8,23 @@
 
 #projects_list {
     overflow: hidden;
+    min-height: 20vh;
     width: 90vw;
     overflow-y: auto;
     border: solid 2px #CCC;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 20px;
+}
+
+#projects_list h3 {
+    font-size: 1.5em;
+    opacity: 0.8;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 a {
