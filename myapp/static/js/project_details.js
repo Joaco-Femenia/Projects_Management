@@ -214,6 +214,8 @@ function editTask(taskId){
 
     // Convert the title to an input   
     const task_title = document.getElementById("task_title_" + taskId);
+    console.log(taskId)
+    console.log(task_title);
     task_title.innerHTML = `<input type="text" id="edit-task-input-${taskId}" value="${task_title.innerText}" />`;
 }
 
@@ -296,7 +298,7 @@ document.getElementById('add-task-form').addEventListener('submit', async (event
             newTask.classList.add('task');
             newTask.id = `task_${result.task.id}`;
             newTask.innerHTML = `
-                <p><strong>${result.task.title}</strong></p>
+                <p id="task_title_${result.task.id}" ><strong>${result.task.title}</strong></p>
                 <div class="task_checkbox" id="task_checkbox_${result.task.id}" onclick="updateTaskStatus('${result.task.id}', '${result.task.completed}')">
                     <i class="bi bi-circle"></i>
                 </div>

@@ -72,7 +72,7 @@ function updateProgressBar(progress, project_id, compact){
 
     if(progress === 'noTasks'){
         progressBar.style.width = '100%';
-        progressNumber.textContent = 'No tasks';
+        progressNumber.textContent = 'Sin tareas';
         progressBar.classList.add('bg-danger');
     }
     else if(progress === 0){

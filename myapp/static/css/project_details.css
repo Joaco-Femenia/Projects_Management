@@ -98,3 +98,7 @@ section {
     font-size: 1.5em;
     color: #fff;
 }
+
+#response-message {
+    display: none;
+}

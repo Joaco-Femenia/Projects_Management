@@ -19,7 +19,7 @@ class ProjectForm(forms.ModelForm):
         - widgets: Customizes the widgets for the form fields.
     """
     TITLE_PATTERN = r"^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ,.!?()'\" -]{1,100}$"
-    DESCRIPTION_PATTERN = r"^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ,.!?():'\" \-\n]{1,1000}$"
+    DESCRIPTION_PATTERN = r"^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ,.!?():'\" \-\n]{0,1000}$"
 
     class Meta:
         model = Project
