@@ -22,56 +22,50 @@ El porcentaje de avance de cada proyecto se muestra junto a su nombre
 
 ## Instalación
 ### 1. Clonar repositorio:
-    ```sh
-    git clone https://github.com/Joaco-Femenia/Projects_Management
-    ```
+```sh
+git clone https://github.com/Joaquin-Femenia/project-management
+```
 ### 2 Entrar al directorio del projecto:
-    ```sh
-    cd Projects_Management
-    ```
-
+```sh
+cd Projects_Management
+```
 ### 3. Crear y activar entorno virtual:
-    Windows (CMD):
-    ```sh
-    python -m venv venv
-    venv\Scripts\activate
-    ```
-    Windows (PowerShell):
-    ```sh
-    python -m venv venv
-    .\venv\Scripts\activate
-    ```
-    Windows (Git Bash):
-    ```sh
-    python -m venv venv
-    source venv/Scripts/activate
-    ```
-    MacOS/Linux:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate
-    ```
-
+Windows (CMD):
+```sh
+python -m venv venv
+venv\Scripts\activate
+```
+Windows (PowerShell):
+```sh
+python -m venv venv
+.\venv\Scripts\activate
+```
+Windows (Git Bash):
+```sh
+python -m venv venv
+source venv/Scripts/activate
+```
+MacOS/Linux:
+```sh
+python -m venv venv
+source venv/bin/activate
+```
 ### 4. Instalar dependencias:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
+```sh
+pip install -r requirements.txt
+```
 ### 5. Entrar a la carpeta mysite:
-    ```sh
-    cd mysite
-    ```
-
+```sh
+cd mysite
+```
 ### 6. Configurar la base de datos:
-    ```sh
-    python manage.py migrate
-    ```
-
+```sh
+python manage.py migrate
+```
 ### 7. Ejecutar el servidor de desarrollo:
-    ```sh
-    python manage.py runserver
-    ```
-
+```sh
+python manage.py runserver
+```
 ### 8. Abre tu navegador y accede a: `http://127.0.0.1:8000/`.
 
 
