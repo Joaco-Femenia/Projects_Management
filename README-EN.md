@@ -21,27 +21,57 @@ The percentage of completion for each project, its shown with their name
 
 
 ## Installation
-1. Clone repository
+### 1. Clone repository:
+    ```sh
     git clone https://github.com/Joaco-Femenia/Projects_Management
-
-2. Create and activate a virtual environment
-    Windows:
-        python -m venv venv
-        .\venv\Scripts\activate
+    ```
+### 2. Enter the project directory:
+    ```sh
+    cd Projects_Management
+    ```
+### 3. Create and activate a virtual environment:
+    Windows (CMD):
+    ```sh
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+    Windows (PowerShell):
+    ```sh
+    python -m venv venv
+    .\venv\Scripts\activate
+    ```
+    Windows (Git Bash):
+    ```sh
+    python -m venv venv
+    source venv/Scripts/activate
+    ```
     MacOS/Linux:
-        python -m venv venv
-        source venv/bin/activate
+    ```sh
+    python -m venv venv
+    source venv/bin/activate
+    ```
 
-3. Install dependencies
+### 4. Install dependencies:
+    ```sh
     pip install -r requirements.txt
+    ```
 
-4. Set up the database
+### 5. Enter mysite folder:
+    ```sh
+    cd mysite
+    ```
+
+### 6. Set up the database:
+    ```sh
     python manage.py migrate
+    ```
 
-5. Execute the developement server
+### 7. Execute the developement server:
+    ```sh
     python manage.py runserver
+    ```
 
-6. Open your browser and browse to `http://127.0.0.1:8000/`.
+### 8. Open your browser and browse to: `http://127.0.0.1:8000/`.
 
 
 ## Usage

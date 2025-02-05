@@ -21,27 +21,58 @@ El porcentaje de avance de cada proyecto se muestra junto a su nombre
 
 
 ## Instalación
-1. Clonar repositorio
+### 1. Clonar repositorio:
+    ```sh
     git clone https://github.com/Joaco-Femenia/Projects_Management
+    ```
+### 2 Entrar al directorio del projecto:
+    ```sh
+    cd Projects_Management
+    ```
 
-2. Crear y activar entorno virtual
-    Windows:
-        python -m venv venv
-        .\venv\Scripts\activate
+### 3. Crear y activar entorno virtual:
+    Windows (CMD):
+    ```sh
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+    Windows (PowerShell):
+    ```sh
+    python -m venv venv
+    .\venv\Scripts\activate
+    ```
+    Windows (Git Bash):
+    ```sh
+    python -m venv venv
+    source venv/Scripts/activate
+    ```
     MacOS/Linux:
-        python -m venv venv
-        source venv/bin/activate
+    ```sh
+    python -m venv venv
+    source venv/bin/activate
+    ```
 
-3. Instalar dependencias
+### 4. Instalar dependencias:
+    ```sh
     pip install -r requirements.txt
+    ```
 
-4. Configurar la base de datos
+### 5. Entrar a la carpeta mysite:
+    ```sh
+    cd mysite
+    ```
+
+### 6. Configurar la base de datos:
+    ```sh
     python manage.py migrate
+    ```
 
-5. Ejecutar el servidor de desarrollo
+### 7. Ejecutar el servidor de desarrollo:
+    ```sh
     python manage.py runserver
+    ```
 
-6. Abre tu navegador y accede a `http://127.0.0.1:8000/`.
+### 8. Abre tu navegador y accede a: `http://127.0.0.1:8000/`.
 
 
 ## Uso
